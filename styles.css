@@ -13,8 +13,9 @@ body{
 .container{
     width: 500px;
     height: 500px;
+    background-color: white;
     margin: 0 auto;
-    border: 2px solid white;
+    border: 2px solid gray;
     display: grid;
 }
 

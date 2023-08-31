@@ -9,3 +9,10 @@ for (let i = 0; i < s; i++) {
     div.classList.add('square');
     grid.appendChild(div);
 }
+
+let squares = document.querySelectorAll('.square');
+squares.forEach((square) => {
+    square.addEventListener("mouseover", (e) => {
+        square.style.backgroundColor = "black";
+    });
+});
