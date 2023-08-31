@@ -12,7 +12,11 @@ for (let i = 0; i < s; i++) {
 
 let squares = document.querySelectorAll('.square');
 squares.forEach((square) => {
-    square.addEventListener("mouseover", (e) => {
+    square.addEventListener("mouseover", () => {
         square.style.backgroundColor = "black";
     });
 });
+
+function reset(){
+    grid.innerHTML = '';
+}
