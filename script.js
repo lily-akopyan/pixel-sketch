@@ -4,6 +4,8 @@ let s = Math.pow(rows, 2);
 grid.style.gridTemplateColumns = `repeat(${rows}, 1fr)`;
 grid.style.gridTemplateRows = `repeat(${rows}, 1fr)` ;
 
+let resetbtn = document.getElementById('resetbtn');
+resetbtn.addEventListener('click', reset);
 for (let i = 0; i < s; i++) {
     const div = document.createElement('div');
     div.classList.add('square');
