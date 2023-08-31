@@ -8,6 +8,32 @@ body{
     background-color: #07010b;
     color: #ffffff;
     text-align: center;
+    font-size: 1.2rem;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.settings{
+    display: block;
+    width: 300px;
+    height: 500px;
+    border: 2px solid gray;
+}
+
+.settings button{
+    font-size: 1.2rem;
+    color: white;
+    width: 80%;
+    background-color: black;
+    border: 3px solid gray;
+    border-radius: 10%;
+    padding: 6px;
+display: block;
+margin: 0 auto 10px;
 }
 
 .container{
