@@ -1,30 +1,31 @@
 html {
     margin: 0;
     padding: 0;
-    
+
 }
 
-body{
+body {
     background-color: #07010b;
     color: #ffffff;
     text-align: center;
     font-size: 1.2rem;
 }
 
-main{
+main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.settings{
+.settings {
     display: block;
     width: 300px;
     height: 500px;
     border: 2px solid gray;
+    padding: 2% 0;
 }
 
-.settings button{
+.settings button {
     font-size: 1.2rem;
     color: white;
     width: 80%;
@@ -32,11 +33,11 @@ main{
     border: 3px solid gray;
     border-radius: 10%;
     padding: 6px;
-display: block;
-margin: 0 auto 10px;
+    display: block;
+    margin: 0 auto 10px;
 }
 
-.container{
+.container {
     width: 500px;
     height: 500px;
     background-color: white;
@@ -45,7 +46,7 @@ margin: 0 auto 10px;
     display: grid;
 }
 
-.square{
+.square {
     border: 1px solid gray;
     box-sizing: border-box;
 }
