@@ -15,8 +15,7 @@ body{
     height: 500px;
     margin: 0 auto;
     border: 2px solid white;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
 }
 
 .square{
