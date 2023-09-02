@@ -1,7 +1,6 @@
 html {
     margin: 0;
     padding: 0;
-
 }
 
 body {
@@ -9,6 +8,7 @@ body {
     color: #ffffff;
     text-align: center;
     font-size: 1.2rem;
+    box-sizing: border-box;
 }
 
 main {
@@ -20,21 +20,33 @@ main {
 .settings {
     display: block;
     width: 300px;
-    height: 500px;
     border: 2px solid gray;
     padding: 2% 0;
 }
 
 .settings button {
     font-size: 1.2rem;
+    font-weight: 600;
     color: white;
     width: 80%;
     background-color: black;
     border: 3px solid gray;
-    border-radius: 10%;
+    border-radius: 10px;
     padding: 6px;
     display: block;
     margin: 0 auto 10px;
+}
+
+.settings button:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.settings button:active {
+    color: rgb(26, 26, 26);
+    background-color: gray;
+    border-color: black;
 }
 
 .container {
@@ -48,5 +60,5 @@ main {
 
 .square {
     border: 1px solid gray;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
