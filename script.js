@@ -1,11 +1,25 @@
+const STARTSIZE = 16;
+const STARTCOLOR = 'black';
 let grid = document.querySelector('.container');
 let resetbtn = document.getElementById('resetbtn');
-let gridsize = document.getElementById('gridsize');
+let sizedisp = document.getElementById('sizedisp');
+let sizeslider = document.getElementById('sizeslider');
 let eraserbtn = document.getElementById('eraserbtn');
-let color = "black";
-createGrid(16);
-resetbtn.addEventListener('click', reset);
+let color = STARTCOLOR;
+createGrid(STARTSIZE);
 eraserbtn.addEventListener('click', eraser);
+
+resetbtn.addEventListener('click', () =>{
+    reset();
+    sizeslider.value = `${STARTSIZE}`;
+    createGrid(STARTSIZE);
+});
+
+sizeslider.addEventListener('input', ()=>{
+    let size = sizeslider.value;
+    reset();
+    createGrid(size);
+});
 
 function createGrid(r) {
     for (let i = 0; i < r * r; i++) {
@@ -16,7 +30,7 @@ function createGrid(r) {
     }
     grid.style.gridTemplateColumns = `repeat(${r}, 1fr)`;
     grid.style.gridTemplateRows = `repeat(${r}, 1fr)`;
-    gridsize.innerText = `${r}x${r}`;
+    sizedisp.innerText = `${r}x${r}`;
 }
 
 function hoverColor() {
@@ -29,5 +43,4 @@ function eraser() {
 
 function reset() {
     grid.innerHTML = '';
-    createGrid(16);
 }
