@@ -8,6 +8,7 @@
 body {
     background-color: #07010b;
     color: #ffffff;
+    font-family: 'VT323', monospace;
     text-align: center;
     font-size: 1.2rem;
     box-sizing: border-box;
@@ -15,6 +16,7 @@ body {
 
 h1 {
     margin: 1.5rem;
+    font-size: 3rem;
 }
 
 main {
@@ -25,8 +27,7 @@ main {
 }
 
 .settings {
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.5rem;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
@@ -47,8 +48,8 @@ main {
 }
 
 .settings button {
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-family: 'VT323', monospace;
+    font-size: 1.5rem;
     color: white;
     width: 80%;
     background-color: black;
