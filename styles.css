@@ -25,6 +25,8 @@ main {
 }
 
 .settings {
+    font-size: 1.2rem;
+    font-weight: 600;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
@@ -32,6 +34,16 @@ main {
     width: 300px;
     border: 2px solid gray;
     padding: 2% 0;
+}
+
+.input.range *{
+    display: block;
+}
+
+.input.color{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
 }
 
 .settings button {

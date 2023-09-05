@@ -12,9 +12,13 @@
     <h1>Pixel sketch</h1>
     <main>
         <div class="settings">
-            <div class="range">
-                <p id="sizedisp"></p>
+            <div class="input range">
+                <label for="sizeslider" id="sizedisp"></label>
                 <input id="sizeslider" type="range" min="1" max="64" value="16" class="slider">
+            </div>
+            <div class="input color">
+                <label for="colorpicker">Pen Colour</label>
+                <input type="color" id="colorpicker" value="#0000ff">
             </div>
             <button id="rainbowmode" type="button">Rainbow Mode</button>
             <button id="eraserbtn" type="button">Eraser</button>
