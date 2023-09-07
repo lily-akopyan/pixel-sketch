@@ -31,6 +31,7 @@ function createGrid(r) {
         const div = document.createElement('div');
         div.classList.add('square');
         div.addEventListener("mouseover", hoverColor);
+        div.addEventListener("touchmove", hoverColor);
         grid.appendChild(div);
     }
     grid.style.gridTemplateColumns = `repeat(${r}, 1fr)`;
