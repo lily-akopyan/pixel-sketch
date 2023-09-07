@@ -4,6 +4,7 @@ let grid = document.querySelector('.container');
 let resetbtn = document.getElementById('resetbtn');
 let sizedisp = document.getElementById('sizedisp');
 let sizeslider = document.getElementById('sizeslider');
+let colorpicker = document.getElementById('colorpicker');
 let eraserbtn = document.getElementById('eraserbtn');
 let color = STARTCOLOR;
 createGrid(STARTSIZE);
@@ -19,6 +20,11 @@ sizeslider.addEventListener('input', ()=>{
     let size = sizeslider.value;
     reset();
     createGrid(size);
+});
+
+colorpicker.addEventListener('input', ()=>{
+    let color = colorpicker.value;
+    
 });
 
 function createGrid(r) {
