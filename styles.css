@@ -89,6 +89,19 @@ main {
     box-sizing: inherit;
 }
 
+footer{
+    padding: 1rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    color: gray;
+}
+
 @media only screen and (max-width: 800px) {
     main {
         flex-direction: column-reverse;
